@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D</title>
+    <link rel="stylesheet" href="selectcard.css">
+</head>
+<body>
+    <div class="box">
+        <span style="--i:1;"><img src="https://cdn.discordapp.com/attachments/887377063772819466/1150331229539934238/5fe37250-e98f-11ed-a1e9-596292a5b691_webp_original.jpg" alt=""></span>
+        <span style="--i:2;"><img src="https://cdn.discordapp.com/attachments/887377063772819466/1150331254688985149/58c2616f865ca63de622abfb0b5aeeb3.jpg" alt=""></span>
+        <span style="--i:3;"><img src="https://cdn.discordapp.com/attachments/887377063772819466/1150331284493717545/483225e0-4171-11ee-9538-ff0b17c4dcdd_webp_original.webp" alt=""></span>
+        <span style="--i:4;"><img src="https://cdn.discordapp.com/attachments/887377063772819466/1150331313778348123/4fdab1b18b47cd1ece418f2321d4ff72.jpg" alt=""></span>
+        <span style="--i:5;"><img src="https://cdn.discordapp.com/attachments/887377063772819466/1150331336356286485/0c1da4c94cda971cb685301d4b686a80.jpg" alt=""></span>
+        <span style="--i:6;"><img src="https://cdn.discordapp.com/attachments/887377063772819466/1150331353045413888/927dbb223a37016f96110aee3fd03ed8.jpg" alt=""></span>
+        <span style="--i:7;"><img src="https://cdn.discordapp.com/attachments/887377063772819466/1150336500630822922/IMG_2251.jpg" alt=""></span>
+        <span style="--i:8;"><img src="https://cdn.discordapp.com/attachments/887377063772819466/1150341972993781810/312178627_5293894994055362_7169597036893341897_n.jpg" alt=""></span>
+        <span style="--i:9;"></span>
+    </div>
+    
+    <script type="text/javascript">
+       let box = document.querySelector('.box');
+        let rotation = 0;
+
+    function updateRotation() {
+    rotation += 0.1; // ปรับความเร็วหมุนที่นี่
+    box.style.setProperty('--rotation', rotation + 'deg');
+    requestAnimationFrame(updateRotation);
+}
+
+    updateRotation();
+
+        
+    </script>
+    
+    
+</body>
+</html>

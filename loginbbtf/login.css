@@ -1,0 +1,105 @@
+/* style.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 1.5; /* ปรับขนาดระยะของ input field */
+}
+
+
+.login-container input[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.wrapper .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8.5px;
+    margin: -10px 0 10px;
+} 
+
+.remember-forget {
+    text-decoration: underline;
+    font-size: 10px; /* ปรับขนาดตัวอักษร */
+}
+
+.remember-forget label input {
+    color: #007bff;
+    margin-right: 1px;
+    font-size: 10px; /* ปรับขนาดตัวอักษร */
+}
+
+.remember-forget a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 10px; /* ปรับขนาดตัวอักษร */
+}
+
+
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
+.signup-link {
+    margin-top: 10px;
+}
+
+.signup-link a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Add some spacing */
+.login-container form {
+    margin-bottom: 20px;
+}
+
+/* Add responsive design */
+@media screen and (max-width: 600px) {
+    .login-container {
+        width: 80%;
+    }
+}
